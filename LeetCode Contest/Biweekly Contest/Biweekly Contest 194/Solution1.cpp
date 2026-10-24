@@ -22,6 +22,21 @@ int peakValleyDifference(vector<int> &nums)
     return peak_sum - valley_sum;
 }
 
+int main()
+{
+    int n;
+    cin >> n;
+
+    vector<int> nums(n);
+
+    for (int i = 0; i < n; i++)
+    {
+        cin >> nums[i];
+    }
+
+    cout << peakValleyDifference(nums) << endl;
+}
+
 // My Approach:-
 
 // 1. Initialize two variables, peak_sum = 0 and valley_sum = 0, to store the sum of peak and valley elements.
